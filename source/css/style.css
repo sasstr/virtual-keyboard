@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #c6c3c3;
+}
+
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.display__textarea {
+  width: 97%;
+  min-height: 200px;
+  padding: 5px;
+  white-space: pre;
+  word-wrap: break-word;
+  resize: vertical;
+}
+
+.main-title {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.description {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 97%;
+  margin-inline: auto;
+  padding: 5px;
+}
+
+.keyboard__row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 100%;
+}
+
+.keyboard__key {
+  width: 4.4%;
+  min-height: 60px;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.keyboard__key:hover {
+  background-color: #e8ddea;
+}
+
+.space {
+  min-width: 27%;
+  flex-grow: 1;
+}
+
+.delete,
+.caps-lock,
+.enter,
+.backspace,
+.tab,
+.shift {
+  width: 8%;
+  min-width: fit-content;
+  flex-shrink: 0;
+}
+
+.up,
+.ctrl,
+.option,
+.command {
+  width: 6%;
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.up,
+.down,
+.right,
+.left {
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.active {
+  border: 2px solid #4ee47d;
+  background-color: #d3b7df;
+}
+
+
