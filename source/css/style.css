@@ -12,7 +12,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #c6c3c3;
+  background-color: #7676ac;
 }
 
 .display {
@@ -71,6 +71,10 @@ body {
   background-color: #e8ddea;
 }
 
+.keyboard__key:active {
+  background-color: #b07aa7;
+}
+
 .space {
   min-width: 27%;
   flex-grow: 1;
@@ -81,7 +85,8 @@ body {
 .enter,
 .backspace,
 .tab,
-.shift {
+.shift-right,
+.shift-left {
   width: 8%;
   min-width: fit-content;
   flex-shrink: 0;
@@ -89,8 +94,10 @@ body {
 
 .up,
 .ctrl,
-.option,
-.command {
+.option-left,
+.option-right,
+.command-left,
+.command-right {
   width: 6%;
   flex-shrink: 0;
   min-width: fit-content;
