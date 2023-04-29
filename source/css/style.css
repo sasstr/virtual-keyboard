@@ -23,11 +23,14 @@ body {
 
 .display__textarea {
   width: 97%;
+  max-width: 1440px;
   min-height: 200px;
+  margin-inline: auto;
   padding: 5px;
   white-space: pre;
   word-wrap: break-word;
   resize: vertical;
+  caret-color: #9724cc;
 }
 
 .main-title {
@@ -38,6 +41,7 @@ body {
 .description {
   width: fit-content;
   margin-inline: auto;
+  font-size: 1.5rem;
 }
 
 .keyboard {
@@ -46,6 +50,7 @@ body {
   justify-content: center;
   gap: 5px;
   width: 97%;
+  max-width: 1440px;
   margin-inline: auto;
   padding: 5px;
 }
@@ -92,7 +97,12 @@ body {
   flex-shrink: 0;
 }
 
-.up,
+.up {
+  width: 6%;
+  min-width: fit-content;
+  flex-shrink: 0;
+}
+
 .ctrl,
 .option-left,
 .option-right,
@@ -101,6 +111,7 @@ body {
   width: 6%;
   flex-shrink: 0;
   min-width: fit-content;
+  text-align: left;
 }
 
 .up,
