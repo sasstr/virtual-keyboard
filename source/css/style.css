@@ -12,7 +12,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #7676ac;
+  background-color: #6868a1;
 }
 
 .display {
@@ -27,6 +27,9 @@ body {
   min-height: 200px;
   margin-inline: auto;
   padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  overflow: hidden;
   white-space: pre;
   word-wrap: break-word;
   resize: vertical;
@@ -34,14 +37,18 @@ body {
 }
 
 .main-title {
-  width: fit-content;
+  width: 30%;
   margin-inline: auto;
+  text-align: center;
+  color: #eaffff;
 }
 
 .description {
-  width: fit-content;
+  width: 90%;
   margin-inline: auto;
+  text-align: center;
   font-size: 1.5rem;
+  color: #eaffff;
 }
 
 .keyboard {
@@ -93,13 +100,11 @@ body {
 .shift-right,
 .shift-left {
   width: 8%;
-  min-width: fit-content;
   flex-shrink: 0;
 }
 
 .up {
   width: 6%;
-  min-width: fit-content;
   flex-shrink: 0;
 }
 
@@ -110,7 +115,6 @@ body {
 .command-right {
   width: 6%;
   flex-shrink: 0;
-  min-width: fit-content;
   text-align: left;
 }
 
@@ -119,7 +123,6 @@ body {
 .right,
 .left {
   flex-shrink: 0;
-  min-width: fit-content;
 }
 
 .active {
