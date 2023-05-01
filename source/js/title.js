@@ -1,3 +1,3 @@
-export const createTitle = () => {
-  return `<h1 class="main-title">Virtual keyboard</h1>`;
-}
+const createTitle = () => '<h1 class="main-title">Virtual keyboard</h1>';
+
+export default createTitle;

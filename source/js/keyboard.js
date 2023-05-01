@@ -1,5 +1,4 @@
-export const createKeyboard = () => {
-  return `<div class="keyboard">
+const createKeyboard = () => `<div class="keyboard">
   <div class="keyboard__row keyboard__row--0">
     <button class="keyboard__key row-0" data-code="Backquote" type="button">§</button>
     <button class="keyboard__key row-0" data-code="Digit1" type="button">1</button>
@@ -76,4 +75,5 @@ export const createKeyboard = () => {
     <button class="keyboard__key function-key arrow" data-code="ArrowRight" type="button">→</button>
   </div>
 </div>`;
-};
+
+export default createKeyboard;
