@@ -34,13 +34,14 @@ body {
   word-wrap: break-word;
   resize: vertical;
   caret-color: #9724cc;
+  outline: none;
 }
 
 .main-title {
   width: 30%;
   margin-inline: auto;
   text-align: center;
-  color: #eaffff;
+  color:  #eaffff;
 }
 
 .description {
@@ -74,9 +75,14 @@ body {
   min-height: 60px;
   flex-grow: 1;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 5px;
   background-color: #f5f5f5;
+}
+
+.row-0,
+.letter-key {
+  font-size: 1.4rem;
 }
 
 .keyboard__key:hover {
@@ -97,10 +103,26 @@ body {
 .enter,
 .backspace,
 .tab,
-.shift-right,
 .shift-left {
   width: 8%;
   flex-shrink: 0;
+}
+
+.caps-lock--flash {
+  position: relative;
+}
+
+.caps-lock--flash::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 8px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #782121;
+  background-color: rgb(0, 255, 106);
 }
 
 .up {
@@ -116,12 +138,15 @@ body {
   width: 6%;
   flex-shrink: 0;
   text-align: left;
+  hyphens: auto;
 }
 
-.up,
-.down,
-.right,
-.left {
+.shift-right {
+  width: 7%;
+}
+
+.arrow {
+  width: 6%;
   flex-shrink: 0;
 }
 

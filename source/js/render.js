@@ -9,14 +9,7 @@ const RenderPosition = {
   AFTERBEGIN: 'afterbegin',
   BEFOREEND: 'beforeend',
 };
-
-/** Функция добавления на страницу разметки htmlElement-а
- *
- * @param {HTMLElement} container контейнер в который будет вставлен htmlElement
- * @param {string} template разметка htmlElement-а
- * @param {string} place место куда надо вставить разметку htmlElement-a
- *  по умолчанию значение 'beforeend'
- */
+// Функция добавляет шаблон в разметку в указанное место
 const render = (container, template, place = RenderPosition.BEFOREEND) => {
   container.insertAdjacentHTML(place, template);
 };

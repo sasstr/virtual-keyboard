@@ -1,7 +1,7 @@
 export const createKeyboard = () => {
   return `<div class="keyboard">
   <div class="keyboard__row keyboard__row--0">
-    <button class="keyboard__key function-key row-0" data-code="Backquote" type="button">§</button>
+    <button class="keyboard__key row-0" data-code="Backquote" type="button">§</button>
     <button class="keyboard__key row-0" data-code="Digit1" type="button">1</button>
     <button class="keyboard__key row-0" data-code="Digit2" type="button">2</button>
     <button class="keyboard__key row-0" data-code="Digit3" type="button">3</button>
@@ -49,7 +49,7 @@ export const createKeyboard = () => {
     <button class="keyboard__key function-key enter" data-code="Enter" type="button">Enter ↵</button>
   </div>
   <div class="keyboard__row  keyboard__row--3">
-    <button class="keyboard__key function-key shift-left" data-code="ShiftLeft" type="button">Shift ⇧</button>
+    <button class="keyboard__key function-key shift shift-left" data-code="ShiftLeft" type="button">Shift ⇧</button>
     <button class="keyboard__key letter-key" data-code="IntlBackslash" type="button">]</button> 
     <button class="keyboard__key letter-key" data-code="KeyZ" type="button">я</button>
     <button class="keyboard__key letter-key" data-code="KeyX" type="button">ч</button>
@@ -60,9 +60,9 @@ export const createKeyboard = () => {
     <button class="keyboard__key letter-key" data-code="KeyM" type="button">ь</button>
     <button class="keyboard__key letter-key" data-code="Comma" type="button">б</button>
     <button class="keyboard__key letter-key" data-code="Period" type="button">ю</button>
-    <button class="keyboard__key" data-code="Slash" type="button">/</button>
-    <button class="keyboard__key function-key up" data-code="ArrowUp" type="button">↑</button>
-    <button class="keyboard__key function-key shift-right" data-code="ShiftRight" type="button">Shift ⇧</button>
+    <button class="keyboard__key letter-key" data-code="Slash" type="button">/</button>
+    <button class="keyboard__key function-key arrow" data-code="ArrowUp" type="button">↑</button>
+    <button class="keyboard__key function-key shift shift-right" data-code="ShiftRight" type="button">Shift ⇧</button>
   </div>
   <div class="keyboard__row  keyboard__row--4">
     <button class="keyboard__key function-key ctrl" data-code="ControlLeft" type="button">^<br>Ctrl</button>
@@ -71,9 +71,9 @@ export const createKeyboard = () => {
     <button class="keyboard__key function-key space" data-code="Space" type="button">Space</button>
     <button class="keyboard__key function-key command-right" data-code="MetaRight" type="button">⌘<br>Command</button>
     <button class="keyboard__key function-key option-right" data-code="AltRight" type="button">⌥<br>Option</button>
-    <button class="keyboard__key function-key left" data-code="ArrowLeft" type="button">←</button>
-    <button class="keyboard__key function-key down" data-code="ArrowDown" type="button">↓</button>
-    <button class="keyboard__key function-key right" data-code="ArrowRight" type="button">→</button>
+    <button class="keyboard__key function-key arrow" data-code="ArrowLeft" type="button">←</button>
+    <button class="keyboard__key function-key arrow" data-code="ArrowDown" type="button">↓</button>
+    <button class="keyboard__key function-key arrow" data-code="ArrowRight" type="button">→</button>
   </div>
 </div>`;
 };
