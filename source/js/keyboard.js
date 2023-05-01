@@ -66,11 +66,11 @@ export const createKeyboard = () => {
   </div>
   <div class="keyboard__row  keyboard__row--4">
     <button class="keyboard__key function-key ctrl" data-code="ControlLeft" type="button">^<br>Ctrl</button>
-    <button class="keyboard__key function-key option-left" data-code="AltLeft" type="button">⌥<br>Option</button>
+    <button class="keyboard__key function-key option option-left" data-code="AltLeft" type="button">⌥<br>Option</button>
     <button class="keyboard__key function-key command-left" data-code="MetaLeft" type="button">⌘<br>Command</button>
     <button class="keyboard__key function-key space" data-code="Space" type="button">Space</button>
     <button class="keyboard__key function-key command-right" data-code="MetaRight" type="button">⌘<br>Command</button>
-    <button class="keyboard__key function-key option-right" data-code="AltRight" type="button">⌥<br>Option</button>
+    <button class="keyboard__key function-key option option-right" data-code="AltRight" type="button">⌥<br>Option</button>
     <button class="keyboard__key function-key arrow" data-code="ArrowLeft" type="button">←</button>
     <button class="keyboard__key function-key arrow" data-code="ArrowDown" type="button">↓</button>
     <button class="keyboard__key function-key arrow" data-code="ArrowRight" type="button">→</button>

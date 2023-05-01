@@ -38,3 +38,5 @@ const changeLang = (evt) => {
 };
 
 window.addEventListener('keydown', changeLang);
+
+export {lang};
