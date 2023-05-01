@@ -1,0 +1,175 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* background-color: #6868a1; */
+  background-blend-mode: screen;
+  background-blend-mode: multiply;
+  background-blend-mode: overlay;
+  background-blend-mode: darken;
+  background-blend-mode: soft-light;
+  background-blend-mode: luminosity;  
+  background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+}
+
+
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.display__textarea {
+  width: 97%;
+  max-width: 1440px;
+  min-height: 200px;
+  margin-inline: auto;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  white-space: pre;
+  word-wrap: break-word;
+  resize: vertical;
+  caret-color: #9724cc;
+  outline: none;
+}
+
+.display__textarea::placeholder {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #aa5656;
+}
+
+.main-title {
+  width: 30%;
+  margin-inline: auto;
+  text-align: center;
+  color:  #eaffff;
+}
+
+.description {
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #eaffff;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 97%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 5px;
+}
+
+.keyboard__row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 100%;
+}
+
+.keyboard__key {
+  width: 4.4%;
+  min-height: 60px;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.row-0,
+.letter-key {
+  font-size: 1.4rem;
+}
+
+.keyboard__key:hover {
+  background-color: #e8ddea;
+}
+
+.keyboard__key:active {
+  background-color: #b07aa7;
+}
+
+.space {
+  min-width: 27%;
+  flex-grow: 1;
+}
+
+.delete,
+.caps-lock,
+.enter,
+.backspace,
+.tab,
+.shift-left {
+  width: 8%;
+  flex-shrink: 0;
+}
+
+.caps-lock--flash {
+  position: relative;
+}
+
+.caps-lock--flash::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 8px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #782121;
+  background-color: rgb(0, 255, 106);
+}
+
+.up {
+  width: 6%;
+  flex-shrink: 0;
+}
+
+.ctrl,
+.option-left,
+.option-right,
+.command-left,
+.command-right {
+  width: 6%;
+  flex-shrink: 0;
+  text-align: left;
+  hyphens: auto;
+}
+
+.shift-right {
+  width: 7%;
+}
+
+.arrow {
+  width: 6%;
+  flex-shrink: 0;
+}
+
+.active {
+  border: 2px solid #4ee47d;
+  background-color: #d3b7df;
+}
+
+
